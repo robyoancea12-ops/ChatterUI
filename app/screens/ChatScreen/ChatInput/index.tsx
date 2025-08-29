@@ -212,6 +212,26 @@ const ChatInput = () => {
                                             setAttachments([...attachments, ...newAttachments])
                                         },
                                     },
+                                    {
+                                        label: 'Analyze Image',
+                                        icon: 'scan',
+                                        onPress: async (menuRef) => {
+                                            menuRef.current?.close()
+                                            // Image analysis feature would go here
+                                            // This would use OCR and AI to describe the image
+                                            console.log('Image analysis feature coming soon!')
+                                        },
+                                    },
+                                    {
+                                        label: 'Add Audio',
+                                        icon: 'sound',
+                                        onPress: async (menuRef) => {
+                                            menuRef.current?.close()
+                                            // Audio analysis feature would go here
+                                            // This would transcribe and analyze audio
+                                            console.log('Audio analysis feature coming soon!')
+                                        },
+                                    },
                                 ]}
                                 style={{
                                     color: color.text._400,

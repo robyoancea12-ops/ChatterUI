@@ -12,6 +12,7 @@ import NotificationSettings from './NotificationSettings'
 import ScreenSettings from './ScreenSettings'
 import SecuritySettings from './SecuritySettings'
 import StyleSettings from './StyleSettings'
+import FeaturesSettings from './FeaturesSettings'
 
 const AppSettingsMenu = () => {
     const { spacing } = Theme.useTheme()
@@ -34,6 +35,7 @@ const AppSettingsMenu = () => {
             <ScreenSettings />
             <DatabaseSettings />
             <SecuritySettings />
+            <FeaturesSettings />
 
             <View style={{ paddingVertical: spacing.xl3 }} />
         </KeyboardAwareScrollView>

@@ -139,6 +139,14 @@ export enum AppSettings {
     UseTagHider = 'settings-usetaghider',
     SaveScrollPosition = 'settings-savescrollposition',
     AutoGenerateTitle = 'settings-auto-generate-title',
+    // New API and security settings
+    RequireDeviceAuthForAPI = 'require-device-auth-for-api',
+    EnableAPIErrorCorrection = 'enable-api-error-correction',
+    EnableAPIUserOverride = 'enable-api-user-override',
+    EnableImageAnalysis = 'enable-image-analysis',
+    EnableAudioAnalysis = 'enable-audio-analysis',
+    SillyTavernMode = 'sillytavern-mode',
+    LegacyDatabaseSupport = 'legacy-database-support',
 }
 
 /**
@@ -173,6 +181,14 @@ export const AppSettingsDefault: Record<AppSettings, boolean> = {
     [AppSettings.UseTagHider]: true,
     [AppSettings.SaveScrollPosition]: false,
     [AppSettings.AutoGenerateTitle]: true,
+    // New API and security settings defaults
+    [AppSettings.RequireDeviceAuthForAPI]: false,
+    [AppSettings.EnableAPIErrorCorrection]: true,
+    [AppSettings.EnableAPIUserOverride]: true,
+    [AppSettings.EnableImageAnalysis]: false,
+    [AppSettings.EnableAudioAnalysis]: false,
+    [AppSettings.SillyTavernMode]: false,
+    [AppSettings.LegacyDatabaseSupport]: false,
 }
 
 export const CLAUDE_VERSION = '2023-06-01'
