@@ -3,6 +3,7 @@ import ThemedButton from '@components/buttons/ThemedButton'
 import DropdownSheet from '@components/input/DropdownSheet'
 import MultiDropdownSheet from '@components/input/MultiDropdownSheet'
 import ThemedTextInput from '@components/input/ThemedTextInput'
+import ThemedSwitch from '@components/input/ThemedSwitch'
 import FadeBackrop from '@components/views/FadeBackdrop'
 import { CLAUDE_VERSION } from '@lib/constants/GlobalValues'
 import { APIConfiguration } from '@lib/engine/API/APIBuilder.types'
@@ -248,6 +249,47 @@ const ConnectionEditor: React.FC<ConnectionEditorProps> = ({
                             <Text style={styles.hintText}>Prefill before model response</Text>
                         </View>
                     )}
+
+                    {/* Security and Advanced Features */}
+                    <View style={{ marginTop: spacing.l }}>
+                        <Text style={[styles.title, { marginBottom: spacing.m }]}>Security & Advanced Features</Text>
+                        
+                        <ThemedSwitch
+                            label="Require Device Authentication"
+                            value={values.requiresDeviceAuth || false}
+                            onChangeValue={(value) => {
+                                setValues({ ...values, requiresDeviceAuth: value })
+                            }}
+                            description="Requires device lock to view API key"
+                        />
+                        
+                        <ThemedSwitch
+                            label="Enable Error Correction"
+                            value={values.enableErrorCorrection || false}
+                            onChangeValue={(value) => {
+                                setValues({ ...values, enableErrorCorrection: value })
+                            }}
+                            description="Automatically handle common API errors"
+                        />
+                        
+                        <ThemedSwitch
+                            label="Enable User Override"
+                            value={values.enableUserOverride || false}
+                            onChangeValue={(value) => {
+                                setValues({ ...values, enableUserOverride: value })
+                            }}
+                            description="Allow manual parameter correction"
+                        />
+                        
+                        <ThemedSwitch
+                            label="Enable Image Analysis"
+                            value={values.enableImageAnalysis || false}
+                            onChangeValue={(value) => {
+                                setValues({ ...values, enableImageAnalysis: value })
+                            }}
+                            description="Use OCR and AI for image analysis"
+                        />
+                    </View>
                 </ScrollView>
                 <ThemedButton
                     buttonStyle={{ marginTop: 8 }}
