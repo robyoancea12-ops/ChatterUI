@@ -93,13 +93,12 @@ module.exports = {
             typedRoutes: true,
             reactCompiler: true,
         },
-        extra: {
-            router: {
-                origin: false,
-            },
-            eas: {
-                projectId: 'deb26e95-d3a8-4444-807c-be7314f2d214',
-            },
-        },
+extra: {
+  eas: {
+    projectId: 'deb26e95-d3a8-4444-807c-be7314f2d214',
+  },
+},
+slug: 'ChatterUI',
+
     },
 }
