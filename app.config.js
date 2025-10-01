@@ -5,7 +5,7 @@ module.exports = {
         name: IS_DEV ? 'ChatterUI (DEV)' : 'ChatterUI',
         newArchEnabled: true,
         slug: 'chocochip',
-        version: '0.8.7',
+        version: '0.8.7b',
         orientation: 'default',
         icon: './assets/images/icon.png',
         scheme: 'chatterui',
@@ -97,6 +97,10 @@ extra: {
   eas: {
     projectId: 'deb26e95-d3a8-4444-807c-be7314f2d214',
   },
+cli: {
+  appVersionSource: "remote"
+}
+
 },
 slug: 'chocochip',
 
