@@ -102,7 +102,6 @@ cli: {
 }
 
 },
-slug: 'chocochip',
 
     },
 }
