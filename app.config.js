@@ -4,7 +4,7 @@ module.exports = {
     expo: {
         name: IS_DEV ? 'ChatterUI (DEV)' : 'ChatterUI',
         newArchEnabled: true,
-        slug: 'ChatterUI',
+        slug: 'chocochip',
         version: '0.8.7',
         orientation: 'default',
         icon: './assets/images/icon.png',
@@ -98,7 +98,7 @@ extra: {
     projectId: 'deb26e95-d3a8-4444-807c-be7314f2d214',
   },
 },
-slug: 'ChatterUI',
+slug: 'chocochip',
 
     },
 }
