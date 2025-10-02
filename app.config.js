@@ -97,9 +97,6 @@ extra: {
   eas: {
     projectId: 'deb26e95-d3a8-4444-807c-be7314f2d214',
   },
-cli: {
-  appVersionSource: "remote"
-}
 
 },
 
